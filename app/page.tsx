@@ -5,6 +5,7 @@ export default function Home() {
     <div>
       <h1>welcome to Quick Food</h1>
       <Button variant="outline">Get Started</Button>
+      <Button variant="outline">Hello</Button>
     </div>
   );
 }
