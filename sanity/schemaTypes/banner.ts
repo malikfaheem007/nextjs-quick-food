@@ -64,7 +64,7 @@ export default defineType({
     prepare(selection) {
       const {title, subtitle, media, active} = selection;
       return {
-        title: `${title} ${active ? "(Active)" : "(Inactive)"}`,
+        title: `${title} ${active ? "" : "(Inactive)"}`,
         subtitle,
         media,
       };

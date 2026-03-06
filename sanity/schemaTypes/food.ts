@@ -96,7 +96,7 @@ export default defineType({
       type: "array",
       of: [{type: "image", options: {hotspot: true}}],
       description: "First image will be used as the main product image",
-      validation: (Rule) => Rule.required().min(1).max(1),
+      validation: (Rule) => Rule.required().min(1).max(6),
     }),
     defineField({
       name: "ingredients",
