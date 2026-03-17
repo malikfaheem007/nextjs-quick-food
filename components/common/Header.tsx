@@ -2,7 +2,6 @@ import {NAVIGATION_LINKS} from "@/constants/data";
 import Container from "./Container";
 import Logo from "./Logo";
 import Link from "next/link";
-import {Button} from "../ui/button";
 
 const Header = () => {
   return (

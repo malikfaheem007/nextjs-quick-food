@@ -1,16 +1,18 @@
-import Header from "@/components/common/Header";
+import Container from "@/components/common/Container";
+import FeaturedFood from "@/components/Home/FeaturedFood";
+import FeaturedRestaurants from "@/components/Home/FeaturedRestaurants";
+import Hero from "@/components/Home/Hero";
+import HowItWorks from "@/components/Home/HowItWorks";
 
 export default function Home() {
   return (
-    <div>
-      <h1>welcome to Quick Food</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-        exercitationem, delectus ab voluptas reprehenderit provident architecto
-        alias dolorem dolore illum eveniet quia sequi nisi eaque ad quam vel ex,
-        hic, totam atque rerum. Repudiandae velit, labore pariatur vitae
-        reiciendis saepe?
-      </p>
+    <div className="min-h-screen bg-background">
+      <Hero />
+      <Container>
+        <HowItWorks />
+        <FeaturedFood />
+        <FeaturedRestaurants />
+      </Container>
     </div>
   );
 }
