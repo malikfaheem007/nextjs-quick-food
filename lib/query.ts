@@ -34,3 +34,11 @@ export const FEATURED_FOODS_QUERY = groq`*[_type == "food" && featured == true &
       name
     }
 }`;
+
+export const CATEGORIES_QUERY = groq`*[_type == "category" && isActive == true] | order(order asc)[0...6] {
+    _id,
+    name,
+    "slug": slug.current,
+    image,
+    "itemCount": count(*[_type == "food" && references(^._id)])
+}`;

@@ -82,6 +82,7 @@ export interface FoodComplete extends Omit<
 
 export interface CategoryWithSlug extends Omit<BaseCategory, "slug"> {
   slug?: string;
+  itemCount?: number;
 }
 
 // Size with complete details

@@ -141,6 +141,8 @@ export type Post = {
   title?: string;
   slug?: Slug;
   author?: {
+    name?: string;
+    image?: Author["image"];
     _ref: string;
     _type: "reference";
     _weak?: boolean;
@@ -159,6 +161,8 @@ export type Post = {
     _type: "image";
   };
   categories?: Array<{
+    title?: string;
+    slug?: Post["slug"];
     _ref: string;
     _type: "reference";
     _weak?: boolean;
